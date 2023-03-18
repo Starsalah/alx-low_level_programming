@@ -7,19 +7,15 @@
  */
 int main(void)
 {
-    /* Print single digit numbers of base 10 */
-    putchar('0');
-    putchar('1');
-    putchar('2');
-    putchar('3');
-    putchar('4');
-    putchar('5');
-    putchar('6');
-    putchar('7');
-    putchar('8');
-    putchar('9');
+    int i;
 
-    /* Print newline character */
+    /* Print single digit numbers of base 10 using putchar() */
+    for (i = 48; i < 58; i++)
+    {
+        putchar(i);
+    }
+
+    /* Print newline character using putchar() */
     putchar('\n');
 
     return (0);
