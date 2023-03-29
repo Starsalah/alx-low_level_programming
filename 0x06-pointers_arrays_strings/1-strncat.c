@@ -1,15 +1,16 @@
 #include "main.h"
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * _strcat - Concatenates two strings.
+ * _strncat - Concatenates two strings.
  *
  * @dest: Pointer to the destination string.
  * @src: Pointer to the source string.
+ * @n: Maximum number of characters to copy from src.
  *
  * Return: Pointer to the resulting string.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *p = dest;
 
@@ -18,7 +19,7 @@ char *_strcat(char *dest, char *src)
 		p++;
 	}
 
-	while (*src)
+	while (n-- && *src)
 	{
 		*p++ = *src++;
 	}
