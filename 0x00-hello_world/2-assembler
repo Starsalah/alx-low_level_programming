@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -o "$(basename -s .c $1).s" $1
+gcc -S $CFILE
