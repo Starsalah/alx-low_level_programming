@@ -8,8 +8,8 @@
  */
 int main(void)
 {
- 	nsigned long int n;
-
+	unsigned long int n;
+	
 	n = 1024;
 	set_bit(&n, 5);
 	printf("%lu\n", n);
